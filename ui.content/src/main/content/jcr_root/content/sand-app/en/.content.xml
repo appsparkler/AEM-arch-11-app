@@ -7,7 +7,7 @@
         jcr:primaryType="nt:unstructured"
         jcr:title="English"
         sling:resourceType="sand-app/components/structure/page"
-        pageTitle="New Project">
+        pageTitle="New Project" title="English Page">
         <logo
             jcr:primaryType="nt:unstructured"
             sling:resourceType="sand-app/components/structure/logo"/>

@@ -13,15 +13,25 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
+package com.sand.app.core.models;
 
-// Server-side JavaScript for the head.html logic
+import javax.annotation.PostConstruct;
 
-use(function () {
-    var WCMUtils = Packages.com.day.cq.wcm.commons.WCMUtils;
-    var resourceResolver = resource.getResourceResolver();
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.models.annotations.Model;
 
-    return {
-        keywords: WCMUtils.getKeywords(currentPage, false),
-        favIcon: resourceResolver.getResource(currentDesign.getPath() + "/favicon.ico").getPath()
-    };
-});
+@Model(adaptables=Resource.class)
+public class MyRestModel {
+
+
+    private String message;
+
+    @PostConstruct
+    protected void init() {
+        message = "My Restful data here....";
+    }
+
+    public String getMessage() {
+        return message;
+    }
+}

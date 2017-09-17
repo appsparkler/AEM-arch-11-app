@@ -16,6 +16,12 @@
 <p data-sly-test="${properties.text}">Text property: ${properties.text}</p>
 
 <pre data-sly-use.hello="com.sand.app.core.models.HelloWorldModel">
-HelloWorldModel says:
-${hello.message}
-</pre>
+	HelloWorldModel say...
+	${hello.message}
+	<br />
+	
+</pre> 	
+<h1>Trying something out...</h1>
+<div data-sly-use.myRest="com.sand.app.core.models.MyRestModel">
+	myRest.data : ${myRest.message}
+</div>
