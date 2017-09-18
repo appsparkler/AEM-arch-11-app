@@ -21,7 +21,10 @@
 	<br />
 	
 </pre> 	
-<h1>Trying something out...</h1>
-<div data-sly-use.myRest="com.sand.app.core.models.MyRestModel">
-	myRest.data : ${myRest.message}
-</div>
+
+
+<div data-sly-use.mytemplate="my-template.html" data-sly-call="${mytemplate.mytemplate @ param1='Hello there'}"></div>
+
+<pre>
+	<div data-sly-call="${mytemplate.myothertemplate}"></div>
+</pre>
