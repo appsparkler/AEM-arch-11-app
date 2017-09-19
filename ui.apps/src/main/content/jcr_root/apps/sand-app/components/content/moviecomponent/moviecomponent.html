@@ -1,32 +1,37 @@
 
+<sly data-sly-use.props="moviecomponent.js"></sly>
 
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
-  </ul>
+ <!-- Nav tabs -->
+ <ul class="nav nav-tabs" role="tablist">
+   <li role="presentation" class="active"><a href="#home-${props.resourceName}" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+   <li role="presentation"><a href="#profile-${props.resourceName}" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+   <li role="presentation"><a href="#messages-${props.resourceName}" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+   <li role="presentation"><a href="#settings-${props.resourceName}" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+ </ul>
 
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="home">
-		<img class="img-responsive" src="https://lorempixel.com/1000/300?4">
+<!-- Tab panes -->
+<div class="tab-content">
+   
+	<div role="tabpanel" class="tab-pane active" id="home-${props.resourceName}">
+	 	<h1 class="page-header">Home Section...</h1>
+		<img class="img-responsive" src="https://lorempixel.com/10/3?4" width="1000" height="300" />
 	</div>
-    
-    <div role="tabpanel" class="tab-pane" id="profile">
-    	<img class="img-responsive" src="https://lorempixel.com/1000/300?3">
-    </div>
-    
-    <div role="tabpanel" class="tab-pane" id="messages">
-    	<img class="img-responsive" src="https://lorempixel.com/1000/300?1">
-    </div>
-    
-    <div role="tabpanel" class="tab-pane" id="settings">
-    	<img class="img-responsive" src="https://lorempixel.com/1000/300?2">
-    </div>
-  </div>
-
-</div>
+   
+	 <div role="tabpanel" class="tab-pane" id="profile-${props.resourceName}">
+	 	<h1 class="page-heder">Profile Section</h1>
+	 	<img class="img-responsive" src="https://lorempixel.com/10/3?3" width="1000" height="300" />
+	 </div>
+   
+   <div role="tabpanel" class="tab-pane" id="messages-${props.resourceName}">
+	   	<h1>Messages Section</h1>
+	   	<img class="img-responsive" src="https://lorempixel.com/10/3?1" width="1000" height="300">
+   </div>
+   
+   <div role="tabpanel" class="tab-pane" id="settings-${props.resourceName}">
+	   	<h1>Settings Section</h1>
+	   	<img class="img-responsive" src="https://lorempixel.com/10/3?2" width="1000" height="300">
+   </div>
+   
+ </div>
 
 <hr />

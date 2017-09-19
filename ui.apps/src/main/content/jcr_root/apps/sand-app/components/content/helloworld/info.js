@@ -1,4 +1,4 @@
-use(["/libs/sightly/js/3rd-party/q.js", "/etc/clientlibs/granite/jquery/source/1.12.4/jquery-1.12.4.js"], function(q){
+use(["/libs/sightly/js/3rd-party/q.js"], function(q){
 	var info = {};
 	//
 	info.title = granite.resource.properties["text"];
