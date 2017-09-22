@@ -36,6 +36,6 @@
             fieldDescription="News will be shown for above keyword, Use only one keyword without space. Example: &lt;i>google&lt;/i>"
             fieldLabel="Keyword -4"
             name="./tag4"
-            xtype="textfield"></tag-4>
+            xtype="textfield"/>
     </items>
 </jcr:root>

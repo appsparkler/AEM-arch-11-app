@@ -1,6 +1,9 @@
 
-<sly data-sly-use.props="moviecomponent.js"></sly>
 
+<sly data-sly-use.props="moviecomponent.js"></sly>
+<pre>
+	resource.name : ${resource.name}
+</pre>
  <!-- Nav tabs -->
  <ul class="nav nav-tabs" role="tablist">
    <li role="presentation" class="active"><a href="#home-${props.resourceName}" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
@@ -14,24 +17,27 @@
    
 	<div role="tabpanel" class="tab-pane active" id="home-${props.resourceName}">
 	 	<h1 class="page-header">Home Section...</h1>
-		<img class="img-responsive" src="https://lorempixel.com/10/3?4" width="1000" height="300" />
+		<img class="img-responsive" src="https://lorempixel.com/10/3?4" width="1500" height="300" />
 	</div>
    
 	 <div role="tabpanel" class="tab-pane" id="profile-${props.resourceName}">
-	 	<h1 class="page-heder">Profile Section</h1>
-	 	<img class="img-responsive" src="https://lorempixel.com/10/3?3" width="1000" height="300" />
+	 	<h1 class="page-header">Profile Section</h1>
+	 	<img class="img-responsive" src="https://lorempixel.com/10/3?3" width="1500" height="300" />
 	 </div>
    
    <div role="tabpanel" class="tab-pane" id="messages-${props.resourceName}">
-	   	<h1>Messages Section</h1>
-	   	<img class="img-responsive" src="https://lorempixel.com/10/3?1" width="1000" height="300">
+	   	<h1 class="page-header">Messages Section</h1>
+	   	<img class="img-responsive" src="https://lorempixel.com/10/3?1" width="1500" height="300">
    </div>
    
    <div role="tabpanel" class="tab-pane" id="settings-${props.resourceName}">
-	   	<h1>Settings Section</h1>
-	   	<img class="img-responsive" src="https://lorempixel.com/10/3?2" width="1000" height="300">
+	   	<h1 class="page-header">Settings Section</h1>
+	   	<img class="img-responsive" src="https://lorempixel.com/10/3?2" width="1500" height="300">
    </div>
    
  </div>
 
 <hr />
+
+
+<sly data-sly-call="${clientLib.js @ categories='sand.app.components.moviecomponent'}" />
