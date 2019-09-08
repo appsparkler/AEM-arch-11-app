@@ -1,4 +1,7 @@
 # Project Notes
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/appsparkler/AEM-arch-11-app.svg)](https://greenkeeper.io/)
+
 * This is an **Archtype 11** project.
 * It has an additional component - News Component
 * It has an additional OSGi service - **MySimpleServlet**
