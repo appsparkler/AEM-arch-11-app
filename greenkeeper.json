@@ -1,0 +1,9 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "ui.apps/src/main/content/jcr_root/etc/designs/sand-app/clientlib-site/package.json"
+      ]
+    }
+  }
+}
